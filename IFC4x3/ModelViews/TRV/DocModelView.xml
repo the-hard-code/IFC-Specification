@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="TRV" UniqueId="1cc6295e-cc51-452a-8364-ca30d3f45fd1">
+	<ConceptRoots>
+		<DocConceptRoot Name="Bridge" UniqueId="e6bf637d-1f47-44dd-a407-466a8d525d61">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridge" />
+			<Concepts>
+				<DocTemplateUsage Name="BarBindlagerMaterial" UniqueId="01ad79e5-4a04-403e-8897-448d2e216880">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="f4c17451-09e3-4527-bc8b-e6375cd8a222" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=BarBindlagerMaterial;PropertyName=BarBindlagerMaterial;PropertyName=BarBindlagerMaterial;PropertyName=BarBindlagerMaterial;PropertyName=BarBindlagerMaterial;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="BarBindlagerTjocklek" UniqueId="c5600ba2-a31a-465f-81a0-70420be8e490">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="648b23d7-37f4-4c9b-b491-5bf35adada7b" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=BarBindlagerTjocklek;PropertyName=BarBindlagerTjocklek;PropertyName=BarBindlagerTjocklek;PropertyName=BarBindlagerTjocklek;PropertyName=BarBindlagerTjocklek;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="OverdelBredd" UniqueId="8713b5f5-774f-4386-a78a-af1d9f0f3b93">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="0129dc00-9898-4bfc-adbd-8f29ff54e258" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=OverdelBredd;PropertyName=OverdelBredd;PropertyName=OverdelBredd;PropertyName=OverdelBredd;PropertyName=OverdelBredd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="OverdelLage" UniqueId="8e88df25-469d-4319-8b21-dbfb131d7b34">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="67bf645e-db08-4e5d-b112-c4bfa5d446fb" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=OverdelLage;PropertyName=OverdelLage;PropertyName=OverdelLage;PropertyName=OverdelLage;PropertyName=OverdelLage;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="OverdelLaggningsar" UniqueId="136cc0b3-291d-43dc-aa30-a3ef6d6fff24">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="6b7a2f83-5f83-481e-a3f1-13ab60770a28" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=OverdelLaggningsar;PropertyName=OverdelLaggningsar;PropertyName=OverdelLaggningsar;PropertyName=OverdelLaggningsar;PropertyName=OverdelLaggningsar;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="OverdelLangd" UniqueId="2eb03fdd-b513-4653-a49f-6eb624ad0240">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="5e9a3267-a5b7-41ba-9342-e576890b7407" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=OverdelLangd;PropertyName=OverdelLangd;PropertyName=OverdelLangd;PropertyName=OverdelLangd;PropertyName=OverdelLangd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="OverdelNr" UniqueId="16795787-a5c5-43ce-b522-e338a1212ba6">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="e3a61c80-dc05-4c6f-a772-73b740722c9d" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=OverdelNr;PropertyName=OverdelNr;PropertyName=OverdelNr;PropertyName=OverdelNr;PropertyName=OverdelNr;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="OverdelYta" UniqueId="6f226900-5331-4796-90b0-1e5ccbfbddae">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="11e0df5e-dcfd-4071-b767-21aa59a0940d" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=OverdelYta;PropertyName=OverdelYta;PropertyName=OverdelYta;PropertyName=OverdelYta;PropertyName=OverdelYta;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="SkyddslagerMaterial" UniqueId="95938ef1-91c9-43e8-b678-bddf58680448">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="fed83a85-a0a1-45ab-aba6-633c4e8e899b" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=SkyddslagerMaterial;PropertyName=SkyddslagerMaterial;PropertyName=SkyddslagerMaterial;PropertyName=SkyddslagerMaterial;PropertyName=SkyddslagerMaterial;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="SkyddslagerTjocklek" UniqueId="5cfd4d9a-6e8d-4e41-8be0-873853edc499">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="875a896d-6b78-4d26-aa5a-39df9e10b951" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=SkyddslagerTjocklek;PropertyName=SkyddslagerTjocklek;PropertyName=SkyddslagerTjocklek;PropertyName=SkyddslagerTjocklek;PropertyName=SkyddslagerTjocklek;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="SlitlagerMaterial" UniqueId="e5fedc61-d8c9-46bd-ac36-5665d4219360">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="4abf3e6f-1dc1-4369-a8b6-4762cd186f3f" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=SlitlagerMaterial;PropertyName=SlitlagerMaterial;PropertyName=SlitlagerMaterial;PropertyName=SlitlagerMaterial;PropertyName=SlitlagerMaterial;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="SlitlagerTjocklek" UniqueId="6e974cf4-69a5-45f6-ae0b-fffcd7d2185e">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="5ca47478-5b25-4a28-aad6-718df87f25e3" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=SlitlagerTjocklek;PropertyName=SlitlagerTjocklek;PropertyName=SlitlagerTjocklek;PropertyName=SlitlagerTjocklek;PropertyName=SlitlagerTjocklek;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="TatskiktMaterial" UniqueId="61ecf346-2c6b-4f88-8618-f0b19a37bd16">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="2da09de5-9555-4754-8956-d62ca4c4b5c9" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=TatskiktMaterial;PropertyName=TatskiktMaterial;PropertyName=TatskiktMaterial;PropertyName=TatskiktMaterial;PropertyName=TatskiktMaterial;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="TatskiktTjocklek" UniqueId="316b9b7f-ef67-4cd2-bf39-76b04a5863d9">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="8d49a602-75db-4b34-9fa6-fcdc66115fac" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=TatskiktTjocklek;PropertyName=TatskiktTjocklek;PropertyName=TatskiktTjocklek;PropertyName=TatskiktTjocklek;PropertyName=TatskiktTjocklek;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="990e973d-dedb-447b-8f15-c8725700f52b" Type="IfcBridge" />
+		</DocConceptRoot>
+	</ConceptRoots>
+</DocModelView>
+
