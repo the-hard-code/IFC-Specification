@@ -1,9 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TRV_0SnYbUp555AeDaoZ3Jz5H" Name="TRV" UniqueId="1cc6295e-cc51-452a-8364-ca30d3f45fd1" Code="trv">
 	<ConceptRoots>
+		<DocConceptRoot Name="Anläggningskompletteringar" UniqueId="2b950ecb-f5c8-4f97-9172-1ac655c44b3e">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="PredefinedType" UniqueId="e9d9f83e-0e99-43fe-8c1c-626eb1848813">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="f7af474e-74e2-4576-8047-01e118dbd8f6" RuleParameters="PredefinedType=SURFACESTRUCTURE;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Bridge" UniqueId="32c65686-1a3b-4c04-94f7-b77c465d1d13">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="0953c2c6-b712-46a1-a61f-52f9019ded20" RuleParameters="RelatingObject=IfcBridge;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="95439e32-6a0c-49ec-b871-3c8459e933f2" Type="IfcBridgePart" />
+		</DocConceptRoot>
 		<DocConceptRoot Name="Bridge" UniqueId="e6bf637d-1f47-44dd-a407-466a8d525d61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridge" />
 			<Concepts>
+				<DocTemplateUsage Name="Name and Description" UniqueId="d2605fe8-7ea2-4ab2-8878-b3c8f6879b61">
+					<Documentation>En bro / anläggningsdel enligt TDOK 2012:37 
+kap 3.2 Indelning i anläggningsdel
+
+Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+					<Items>
+						<DocTemplateItem UniqueId="94197ddf-c368-4f01-82ba-f276973c5367" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Site" UniqueId="ea96ed4e-f4ae-41d9-a4c4-10db1418ee40">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="63f8bba3-e76d-46fd-9813-5fb376cdce32" RuleParameters="RelatingObject=IfcSite;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Överbyggnad" UniqueId="8e9025f0-b788-4487-9cf0-9e8fd0d80fd3">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_PDT_25q_ZI694Xw3IlJJey8e" />
+					<Items>
+						<DocTemplateItem UniqueId="23f5e078-c1bc-40cc-ae9e-a7fa66ce7a30" RuleParameters="RelatedObjects=IfcBridgePart;PredefinedType=SUPERSTRUCTURE;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Underbyggnad" UniqueId="a940b7ad-797c-4330-9af1-7a8b4c1ce863">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_PDT_25q_ZI694Xw3IlJJey8e" />
+					<Items>
+						<DocTemplateItem UniqueId="22cd65e1-5c7c-4c1a-87c0-9aaa4fbf98aa" RuleParameters="RelatedObjects=IfcBridgePart;PredefinedType=SUBSTRUCTURE;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Grundläggning" UniqueId="38b05b13-63ea-4871-8e9d-3678c098d9ca">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_PDT_25q_ZI694Xw3IlJJey8e" />
+					<Items>
+						<DocTemplateItem UniqueId="3196b59b-4c7e-45d8-94a3-8d29e0ea68c0" RuleParameters="RelatedObjects=IfcBridgePart;PredefinedType=FOUNDATION;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Anläggningskompletteringar" UniqueId="91b0da5f-ab58-481d-b04f-6c6a3da0d788">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_PDT_25q_ZI694Xw3IlJJey8e" />
+					<Items>
+						<DocTemplateItem UniqueId="74d743b8-360c-4280-81d5-047d0eb12e9a" RuleParameters="RelatedObjects=IfcBridgePart;PredefinedType=SURFACESTRUCTURE;" />
+					</Items>
+				</DocTemplateUsage>
 				<DocTemplateUsage Name="BarBindlagerMaterial" UniqueId="01ad79e5-4a04-403e-8897-448d2e216880">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
@@ -88,18 +146,56 @@
 						<DocTemplateItem UniqueId="8d49a602-75db-4b34-9fa6-fcdc66115fac" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=TatskiktTjocklek;PropertyName=TatskiktTjocklek;PropertyName=TatskiktTjocklek;PropertyName=TatskiktTjocklek;PropertyName=TatskiktTjocklek;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Name and Description" UniqueId="d2605fe8-7ea2-4ab2-8878-b3c8f6879b61">
-					<Documentation>En bro / anläggningsdel enligt TDOK 2012:37 
-kap 3.2 Indelning i anläggningsdel
-
-Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="990e973d-dedb-447b-8f15-c8725700f52b" Type="IfcBridge" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Grundläggning" UniqueId="dd2bab12-e970-4bde-902a-e7a76376c092">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="PredefinedType" UniqueId="b95f8d6f-935f-41b8-9bc3-eb28aba4097c">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
 					<Items>
-						<DocTemplateItem UniqueId="94197ddf-c368-4f01-82ba-f276973c5367" />
+						<DocTemplateItem UniqueId="335a3c87-268e-4ae0-98b5-a82b61c8dde9" RuleParameters="PredefinedType=FOUNDATION;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Bridge" UniqueId="78290f7a-a038-43cc-9765-c82df403ac74">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="0e5b080f-2cc0-4d5d-9986-1f71dda08d53" RuleParameters="RelatingObject=IfcBridge;" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="990e973d-dedb-447b-8f15-c8725700f52b" Type="IfcBridge" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="dc4bf7ba-f68d-4d85-88df-14364ebcb1c0" Type="IfcBridgePart" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Överbyggnad" UniqueId="016944af-33f0-43ef-a52c-5b5c443d0dd4">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="PredefinedType" UniqueId="877024e8-c224-4405-9e96-45e35abfef34">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="47e15981-a25a-4ad7-80e1-2ac7a9e88d25" RuleParameters="PredefinedType=SUPERSTRUCTURE;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Bridge" UniqueId="3c72fe7d-41b3-44cb-bbf9-d101a0fc8c08">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="9fa0fcbf-8fd4-4c3b-9b38-1ccc2be0ede7" RuleParameters="RelatingObject=IfcBridge;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="55278292-dca9-4f0a-b399-7baa5d2a734b" Type="IfcBridgePart" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Project" UniqueId="d8dbe648-a96a-49a7-9b42-f5dc30df9b0d">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcProject" />
+			<Concepts>
+				<DocTemplateUsage Name="Site" UniqueId="32e4b3d4-c858-4116-b374-d048160322c3">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />
+					<Items>
+						<DocTemplateItem UniqueId="797be5e0-5944-48cd-801f-0235737e031f" RuleParameters="RelatedObjects=IfcSite;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="8174ab92-c7d5-4ed3-b7c3-a0c78c4078a4" Type="IfcProject" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="Räcke" UniqueId="c2bd3fca-56ab-4c86-af3d-e47ef1314558">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcRailing" />
@@ -221,6 +317,24 @@ Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documenta
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="33857b38-e372-4c95-ad14-34138c5f386d" Type="IfcSite" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Underbyggnad" UniqueId="280bc453-35e6-49ec-a7df-5071e3339f5e">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="PredefinedType" UniqueId="328178f2-c3e0-48b7-807a-bb188d955278">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="6f125fd3-ee6d-4012-ad2a-6c82accbd29d" RuleParameters="PredefinedType=SUBSTRUCTURE;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Bridge" UniqueId="f07e8796-1d66-4439-a8fb-c5de8594ef66">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="151e0152-576a-4d7e-a48f-f7501a49c0ce" RuleParameters="RelatingObject=IfcBridge;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="c8c742aa-1a21-4d11-bc04-16e733ae7dd4" Type="IfcBridgePart" />
 		</DocConceptRoot>
 	</ConceptRoots>
 </DocModelView>
