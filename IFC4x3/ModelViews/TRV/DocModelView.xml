@@ -225,7 +225,7 @@ Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documenta
 				<DocTemplateUsage Name="Konfidentialitetsniva" UniqueId="bd582674-ba6b-4291-b544-c9340878f368">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
-						<DocTemplateItem UniqueId="1475c55e-c4e5-4dd7-ab7c-7cbafb20e7ae" RuleParameters="PsetName=SETRV_Metadata;PropertyName=Konfidentialitetsniva;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;" />
+						<DocTemplateItem UniqueId="1475c55e-c4e5-4dd7-ab7c-7cbafb20e7ae" RuleParameters="PsetName=SETRV_Metadata;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="KantbalkLangd" UniqueId="81efda63-57ef-46c8-9cd0-42b33e0c9862">
@@ -267,7 +267,7 @@ Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documenta
 				<DocTemplateUsage Name="USDM-Langd" UniqueId="4f366580-2daa-40c5-a6db-6a9f65e13fc1">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
 					<Items>
-						<DocTemplateItem UniqueId="ca5c8b82-d58d-45c5-adb2-87ba1012505e" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Langd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;" />
+						<DocTemplateItem UniqueId="ca5c8b82-d58d-45c5-adb2-87ba1012505e" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;" />
 					</Items>
 				</DocTemplateUsage>
 				<DocTemplateUsage Name="USDM-Volym" UniqueId="7fc6ad14-b7ce-41ca-9115-b540188412cc">
@@ -302,6 +302,84 @@ Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documenta
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="58940e71-54b5-4ac5-9d00-76a62b3cac1b" Type="IfcBeam" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Länkplatta" UniqueId="7a85d460-f968-4bb9-8eef-fab8e5850673">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSlab" />
+			<Concepts>
+				<DocTemplateUsage Name="Identity" UniqueId="7571398d-273b-4ad3-b08b-83a1fcbb5d48">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+					<Items>
+						<DocTemplateItem UniqueId="b1be37a0-59a1-46c2-9efc-1c0c7065918f" RuleParameters="ObjectName=Länkplatta;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Type" UniqueId="a1f25a7c-69fa-428a-ad8c-007a93869a13">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="da39cd6b-6623-4dfb-934f-d94a3d6679b6" RuleParameters="TypePredefinedType=LANDING;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="MLCT-Cementklass" UniqueId="d2c8d4b9-a6ea-4f46-b51e-118dde354625">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="efde9d17-fb24-4bf6-9f59-8ea776bd4ce0" RuleParameters="PsetName=SECC_Concrete;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="MLVX-Vattencementtal" UniqueId="94cb3b3f-a52b-489b-9372-f0634091138d">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="da360d62-b7fa-411f-8aea-336c54448024" RuleParameters="PsetName=SECC_Concrete;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="TOLL-Livslangdsklass" UniqueId="d24b16d1-ec17-48ad-a350-36e0e1d80924">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="b2f69f11-ade9-4832-9b24-c4f9e9da7203" RuleParameters="PsetName=SECC_Concrete;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Konfidentialitetsniva" UniqueId="668be8f3-f101-4e7b-b813-e350ec6eb3f4">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="29316588-4846-440a-92bc-626936b4e41a" RuleParameters="PsetName=SETRV_Metadata;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="ExposureClass" UniqueId="829861f5-f762-455b-af41-0bd3416320f9">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="1bae5610-901c-4733-976d-68d98300c571" RuleParameters="PsetName=Pset_ConcreteElementGeneral;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="StrengthClass" UniqueId="9fba9e0e-f375-45f8-911b-61a8a5325e62">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="8cf1328a-4335-40fa-b547-47b69bb61c7b" RuleParameters="PsetName=Pset_ConcreteElementGeneral;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Bredd" UniqueId="d768641e-c837-4a3d-ab58-9964e92d2ef6">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="0422e41d-71cc-410f-bdf8-49030335df04" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Hojd" UniqueId="bed98acf-65d2-4dba-9e3c-f3e825c6c5ed">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="24eb18a3-4875-425f-a7c2-9f16fee5730e" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Langd" UniqueId="54fe90b1-b010-43bd-9586-23085ead9839">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="13b207e5-d24a-4872-af1c-843be6981cae" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Volym" UniqueId="a7c6bc30-b980-4114-b53c-d2ebb63e11ad">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="0034ef25-9476-49d3-8a84-07c561190398" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="6228caed-f6df-46bf-9882-57b83390b7f6" Type="IfcSlab" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="Överbyggnad" UniqueId="016944af-33f0-43ef-a52c-5b5c443d0dd4">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
