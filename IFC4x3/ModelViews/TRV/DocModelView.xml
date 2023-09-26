@@ -1,37 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DocModelView xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="TRV_0SnYbUp555AeDaoZ3Jz5H" Name="TRV" UniqueId="1cc6295e-cc51-452a-8364-ca30d3f45fd1" Code="trv">
 	<ConceptRoots>
-		<DocConceptRoot Name="Anläggningskompletteringar" UniqueId="2b950ecb-f5c8-4f97-9172-1ac655c44b3e">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+		<DocConceptRoot Name="Kantbalk" UniqueId="1d690175-641b-4a92-a796-7691b2ef2370">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBeam" />
 			<Concepts>
-				<DocTemplateUsage Name="PredefinedType" UniqueId="e9d9f83e-0e99-43fe-8c1c-626eb1848813">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+				<DocTemplateUsage Name="Identity" UniqueId="af3b8805-6c38-4449-9fca-d9f4d26fddfa">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
 					<Items>
-						<DocTemplateItem UniqueId="f7af474e-74e2-4576-8047-01e118dbd8f6" RuleParameters="PredefinedType=SURFACESTRUCTURE;" />
+						<DocTemplateItem UniqueId="6c876772-0eac-4a3e-87d1-cfc7237e070b" RuleParameters="ObjectName=Kantbalk;TypeName=KantbalkForhojd;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Bridge" UniqueId="32c65686-1a3b-4c04-94f7-b77c465d1d13">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+				<DocTemplateUsage Name="Reference" UniqueId="cdc6276c-bb3b-4db4-b4e1-bfe36dbd26e5" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
-						<DocTemplateItem UniqueId="0953c2c6-b712-46a1-a61f-52f9019ded20" RuleParameters="RelatingObject=IfcBridge;" />
+						<DocTemplateItem UniqueId="743bf475-ee85-43f9-8e0b-1d1e33a3e132" RuleParameters="PsetName=Pset_BeamCommon;PropertyName=Reference;Value=KantbalkForhojd;PropertyName=Reference;PropertyName=Reference;Value=KantbalkForhojd;PropertyName=Reference;Value=KantbalkForhojd;PropertyName=Reference;Value=KantbalkForhojd;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="Contains" UniqueId="6746a3ae-4f95-4ecd-9e3c-edf6995aaff1">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+				<DocTemplateUsage Name="MLCT-Cementklass" UniqueId="61112482-8b32-4172-bf58-59676e700fec" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
-						<DocTemplateItem UniqueId="318508a3-ef64-46ad-a6cf-5b9c4a7429f9" RuleParameters="Type=IfcDuctSegment;">
-							<Documentation>piping</Documentation>
-						</DocTemplateItem>
-						<DocTemplateItem UniqueId="99e02c3f-d145-48b9-9b51-369957cec2c8" RuleParameters="Type=IfcRailing;">
-							<Documentation>guardrail</Documentation>
-						</DocTemplateItem>
-						<DocTemplateItem UniqueId="54b1aef1-73aa-437a-a48e-76510c4e3193" RuleParameters="Type=IfcSensor;">
-							<Documentation>various sensors</Documentation>
-						</DocTemplateItem>
+						<DocTemplateItem UniqueId="22aee441-301f-4499-8afb-396bf989cb78" RuleParameters="PsetName=SECC_Concrete;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="MLVX-Vattencementtal" UniqueId="e5340260-5648-4b37-868a-5878d4955803" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="97dd1070-65bc-4a7d-8f1b-7bf22680b490" RuleParameters="PsetName=SECC_Concrete;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="TOLL-Livslangdsklass" UniqueId="3c2fd265-ee2b-43ab-a293-5398757f8307" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="6f84601b-4515-491a-bf59-9679bf43c461" RuleParameters="PsetName=SECC_Concrete;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Konfidentialitetsniva" UniqueId="bd582674-ba6b-4291-b544-c9340878f368" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="1475c55e-c4e5-4dd7-ab7c-7cbafb20e7ae" RuleParameters="PsetName=SETRV_Metadata;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="KantbalkLangd" UniqueId="81efda63-57ef-46c8-9cd0-42b33e0c9862" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="217ab5c2-3b53-4a12-985f-c0a3694c998c" RuleParameters="PsetName=SETRVx_BaTManKantbalk;PropertyName=KantbalkLangd;PropertyName=KantbalkLangd;PropertyName=KantbalkLangd;PropertyName=KantbalkLangd;PropertyName=KantbalkLangd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Lage" UniqueId="7b3469ef-7e44-4bee-b640-076b16c5e07a" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="1f03ec0d-224f-4e62-8bd2-20411540e663" RuleParameters="PsetName=SETRVx_BaTManKantbalk;PropertyName=Lage;PropertyName=Lage;PropertyName=Lage;PropertyName=Lage;PropertyName=Lage;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="ExposureClass" UniqueId="a82ba348-49c0-4234-a1f8-c97eb9f74bcd" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="6fa366a7-cc5e-4e78-9f3c-5a94574257ca" RuleParameters="PsetName=Pset_ConcreteElementGeneral;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="StrengthClass" UniqueId="43c09259-9a0e-4379-9e34-e731157ce5d4" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="31b63463-4664-42f4-b607-20c592dc358b" RuleParameters="PsetName=Pset_ConcreteElementGeneral;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Bredd" UniqueId="cbd1f7fe-1f21-4e6f-865b-dab9259a1d37" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="7b18c90f-8b56-4be0-82c3-b5f42915d5db" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Hojd" UniqueId="89a2787f-c890-4968-8cf1-70b2b682bb71" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="5e7991d4-ab67-4326-8b3b-26fd97620ee9" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Langd" UniqueId="4f366580-2daa-40c5-a6db-6a9f65e13fc1" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="ca5c8b82-d58d-45c5-adb2-87ba1012505e" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Volym" UniqueId="7fc6ad14-b7ce-41ca-9115-b540188412cc" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="eead27c0-f310-4cd8-addd-fe43c107cbee" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Material" UniqueId="02c1eaa7-2b94-4a04-aa4d-8e879fb4429b">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
+					<Items>
+						<DocTemplateItem UniqueId="6db37f57-d895-4d8c-961b-1b6f1c86e760" RuleParameters="MaterialName=Betong;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="UGA00" UniqueId="3f6ee3b3-2a12-4bea-bd5f-3fc883afc18a">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" />
+					<Items>
+						<DocTemplateItem UniqueId="60e0c343-a0ff-4cf6-857d-9b3c57c9abfe" RuleParameters="Identification=UGA00;Name=Kantbalk;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="31HC--" UniqueId="aacf5368-e0db-4def-bc9a-e527517bd399">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" />
+					<Items>
+						<DocTemplateItem UniqueId="5ee1bfed-024c-494b-ba95-0b91ca7a62c8" RuleParameters="Identification=31HC--;Name=Kantbalk;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="EBE.111" UniqueId="c143cd35-7547-4ec4-87ed-cb586570dc2c">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" />
+					<Items>
+						<DocTemplateItem UniqueId="f8ad3f3c-eff9-4b39-91f0-67a5e906cbb4" RuleParameters="Identification=EBE.111;Name=Betonggjutning Kategori A vid nybyggnad av bro;" />
 					</Items>
 				</DocTemplateUsage>
 			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="95439e32-6a0c-49ec-b871-3c8459e933f2" Type="IfcBridgePart" />
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="58940e71-54b5-4ac5-9d00-76a62b3cac1b" Type="IfcBeam" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="Bridge" UniqueId="e6bf637d-1f47-44dd-a407-466a8d525d61">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridge" />
@@ -76,85 +158,85 @@ Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documenta
 						<DocTemplateItem UniqueId="74d743b8-360c-4280-81d5-047d0eb12e9a" RuleParameters="RelatedObjects=IfcBridgePart;PredefinedType=SURFACESTRUCTURE;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="BarBindlagerMaterial" UniqueId="01ad79e5-4a04-403e-8897-448d2e216880">
+				<DocTemplateUsage Name="BarBindlagerMaterial" UniqueId="01ad79e5-4a04-403e-8897-448d2e216880" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="f4c17451-09e3-4527-bc8b-e6375cd8a222" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=BarBindlagerMaterial;PropertyName=BarBindlagerMaterial;PropertyName=BarBindlagerMaterial;PropertyName=BarBindlagerMaterial;PropertyName=BarBindlagerMaterial;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="BarBindlagerTjocklek" UniqueId="c5600ba2-a31a-465f-81a0-70420be8e490">
+				<DocTemplateUsage Name="BarBindlagerTjocklek" UniqueId="c5600ba2-a31a-465f-81a0-70420be8e490" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="648b23d7-37f4-4c9b-b491-5bf35adada7b" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=BarBindlagerTjocklek;PropertyName=BarBindlagerTjocklek;PropertyName=BarBindlagerTjocklek;PropertyName=BarBindlagerTjocklek;PropertyName=BarBindlagerTjocklek;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="OverdelBredd" UniqueId="8713b5f5-774f-4386-a78a-af1d9f0f3b93">
+				<DocTemplateUsage Name="OverdelBredd" UniqueId="8713b5f5-774f-4386-a78a-af1d9f0f3b93" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="0129dc00-9898-4bfc-adbd-8f29ff54e258" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=OverdelBredd;PropertyName=OverdelBredd;PropertyName=OverdelBredd;PropertyName=OverdelBredd;PropertyName=OverdelBredd;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="OverdelLage" UniqueId="8e88df25-469d-4319-8b21-dbfb131d7b34">
+				<DocTemplateUsage Name="OverdelLage" UniqueId="8e88df25-469d-4319-8b21-dbfb131d7b34" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="67bf645e-db08-4e5d-b112-c4bfa5d446fb" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=OverdelLage;PropertyName=OverdelLage;PropertyName=OverdelLage;PropertyName=OverdelLage;PropertyName=OverdelLage;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="OverdelLaggningsar" UniqueId="136cc0b3-291d-43dc-aa30-a3ef6d6fff24">
+				<DocTemplateUsage Name="OverdelLaggningsar" UniqueId="136cc0b3-291d-43dc-aa30-a3ef6d6fff24" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="6b7a2f83-5f83-481e-a3f1-13ab60770a28" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=OverdelLaggningsar;PropertyName=OverdelLaggningsar;PropertyName=OverdelLaggningsar;PropertyName=OverdelLaggningsar;PropertyName=OverdelLaggningsar;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="OverdelLangd" UniqueId="2eb03fdd-b513-4653-a49f-6eb624ad0240">
+				<DocTemplateUsage Name="OverdelLangd" UniqueId="2eb03fdd-b513-4653-a49f-6eb624ad0240" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="5e9a3267-a5b7-41ba-9342-e576890b7407" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=OverdelLangd;PropertyName=OverdelLangd;PropertyName=OverdelLangd;PropertyName=OverdelLangd;PropertyName=OverdelLangd;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="OverdelNr" UniqueId="16795787-a5c5-43ce-b522-e338a1212ba6">
+				<DocTemplateUsage Name="OverdelNr" UniqueId="16795787-a5c5-43ce-b522-e338a1212ba6" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="e3a61c80-dc05-4c6f-a772-73b740722c9d" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=OverdelNr;PropertyName=OverdelNr;PropertyName=OverdelNr;PropertyName=OverdelNr;PropertyName=OverdelNr;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="OverdelYta" UniqueId="6f226900-5331-4796-90b0-1e5ccbfbddae">
+				<DocTemplateUsage Name="OverdelYta" UniqueId="6f226900-5331-4796-90b0-1e5ccbfbddae" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="11e0df5e-dcfd-4071-b767-21aa59a0940d" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=OverdelYta;PropertyName=OverdelYta;PropertyName=OverdelYta;PropertyName=OverdelYta;PropertyName=OverdelYta;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="SkyddslagerMaterial" UniqueId="95938ef1-91c9-43e8-b678-bddf58680448">
+				<DocTemplateUsage Name="SkyddslagerMaterial" UniqueId="95938ef1-91c9-43e8-b678-bddf58680448" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="fed83a85-a0a1-45ab-aba6-633c4e8e899b" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=SkyddslagerMaterial;PropertyName=SkyddslagerMaterial;PropertyName=SkyddslagerMaterial;PropertyName=SkyddslagerMaterial;PropertyName=SkyddslagerMaterial;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="SkyddslagerTjocklek" UniqueId="5cfd4d9a-6e8d-4e41-8be0-873853edc499">
+				<DocTemplateUsage Name="SkyddslagerTjocklek" UniqueId="5cfd4d9a-6e8d-4e41-8be0-873853edc499" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="875a896d-6b78-4d26-aa5a-39df9e10b951" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=SkyddslagerTjocklek;PropertyName=SkyddslagerTjocklek;PropertyName=SkyddslagerTjocklek;PropertyName=SkyddslagerTjocklek;PropertyName=SkyddslagerTjocklek;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="SlitlagerMaterial" UniqueId="e5fedc61-d8c9-46bd-ac36-5665d4219360">
+				<DocTemplateUsage Name="SlitlagerMaterial" UniqueId="e5fedc61-d8c9-46bd-ac36-5665d4219360" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="4abf3e6f-1dc1-4369-a8b6-4762cd186f3f" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=SlitlagerMaterial;PropertyName=SlitlagerMaterial;PropertyName=SlitlagerMaterial;PropertyName=SlitlagerMaterial;PropertyName=SlitlagerMaterial;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="SlitlagerTjocklek" UniqueId="6e974cf4-69a5-45f6-ae0b-fffcd7d2185e">
+				<DocTemplateUsage Name="SlitlagerTjocklek" UniqueId="6e974cf4-69a5-45f6-ae0b-fffcd7d2185e" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="5ca47478-5b25-4a28-aad6-718df87f25e3" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=SlitlagerTjocklek;PropertyName=SlitlagerTjocklek;PropertyName=SlitlagerTjocklek;PropertyName=SlitlagerTjocklek;PropertyName=SlitlagerTjocklek;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="TatskiktMaterial" UniqueId="61ecf346-2c6b-4f88-8618-f0b19a37bd16">
+				<DocTemplateUsage Name="TatskiktMaterial" UniqueId="61ecf346-2c6b-4f88-8618-f0b19a37bd16" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="2da09de5-9555-4754-8956-d62ca4c4b5c9" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=TatskiktMaterial;PropertyName=TatskiktMaterial;PropertyName=TatskiktMaterial;PropertyName=TatskiktMaterial;PropertyName=TatskiktMaterial;" />
 					</Items>
 				</DocTemplateUsage>
-				<DocTemplateUsage Name="TatskiktTjocklek" UniqueId="316b9b7f-ef67-4cd2-bf39-76b04a5863d9">
+				<DocTemplateUsage Name="TatskiktTjocklek" UniqueId="316b9b7f-ef67-4cd2-bf39-76b04a5863d9" Override="true">
 					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
 					<Items>
 						<DocTemplateItem UniqueId="8d49a602-75db-4b34-9fa6-fcdc66115fac" RuleParameters="PredefinedType=GIRDER;PsetName=SETRVx_BaTManTatskiktBelaggning;PropertyName=TatskiktTjocklek;PropertyName=TatskiktTjocklek;PropertyName=TatskiktTjocklek;PropertyName=TatskiktTjocklek;PropertyName=TatskiktTjocklek;" />
@@ -162,224 +244,6 @@ Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documenta
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="990e973d-dedb-447b-8f15-c8725700f52b" Type="IfcBridge" />
-		</DocConceptRoot>
-		<DocConceptRoot Name="Grundläggning" UniqueId="dd2bab12-e970-4bde-902a-e7a76376c092">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
-			<Concepts>
-				<DocTemplateUsage Name="PredefinedType" UniqueId="b95f8d6f-935f-41b8-9bc3-eb28aba4097c">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
-					<Items>
-						<DocTemplateItem UniqueId="335a3c87-268e-4ae0-98b5-a82b61c8dde9" RuleParameters="PredefinedType=FOUNDATION;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Bridge" UniqueId="78290f7a-a038-43cc-9765-c82df403ac74">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
-					<Items>
-						<DocTemplateItem UniqueId="0e5b080f-2cc0-4d5d-9986-1f71dda08d53" RuleParameters="RelatingObject=IfcBridge;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Contains" UniqueId="9cff4444-17e8-421a-8363-ba05333a929a">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
-					<Items>
-						<DocTemplateItem UniqueId="817122fe-d03e-405d-9fb8-7600cd7be975" RuleParameters="Type=IfcFooting;">
-							<Documentation>Bottenplatta</Documentation>
-						</DocTemplateItem>
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="dc4bf7ba-f68d-4d85-88df-14364ebcb1c0" Type="IfcBridgePart" />
-		</DocConceptRoot>
-		<DocConceptRoot Name="Kantbalk" UniqueId="1d690175-641b-4a92-a796-7691b2ef2370">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBeam" />
-			<Concepts>
-				<DocTemplateUsage Name="Identity" UniqueId="af3b8805-6c38-4449-9fca-d9f4d26fddfa">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
-					<Items>
-						<DocTemplateItem UniqueId="6c876772-0eac-4a3e-87d1-cfc7237e070b" RuleParameters="ObjectName=Kantbalk;TypeName=KantbalkForhojd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Reference" UniqueId="cdc6276c-bb3b-4db4-b4e1-bfe36dbd26e5">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="743bf475-ee85-43f9-8e0b-1d1e33a3e132" RuleParameters="PsetName=Pset_BeamCommon;PropertyName=Reference;Value=KantbalkForhojd;PropertyName=Reference;PropertyName=Reference;Value=KantbalkForhojd;PropertyName=Reference;Value=KantbalkForhojd;PropertyName=Reference;Value=KantbalkForhojd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="MLCT-Cementklass" UniqueId="61112482-8b32-4172-bf58-59676e700fec">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="22aee441-301f-4499-8afb-396bf989cb78" RuleParameters="PsetName=SECC_Concrete;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="MLVX-Vattencementtal" UniqueId="e5340260-5648-4b37-868a-5878d4955803">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="97dd1070-65bc-4a7d-8f1b-7bf22680b490" RuleParameters="PsetName=SECC_Concrete;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="TOLL-Livslangdsklass" UniqueId="3c2fd265-ee2b-43ab-a293-5398757f8307">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="6f84601b-4515-491a-bf59-9679bf43c461" RuleParameters="PsetName=SECC_Concrete;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Konfidentialitetsniva" UniqueId="bd582674-ba6b-4291-b544-c9340878f368">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="1475c55e-c4e5-4dd7-ab7c-7cbafb20e7ae" RuleParameters="PsetName=SETRV_Metadata;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="KantbalkLangd" UniqueId="81efda63-57ef-46c8-9cd0-42b33e0c9862">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="217ab5c2-3b53-4a12-985f-c0a3694c998c" RuleParameters="PsetName=SETRVx_BaTManKantbalk;PropertyName=KantbalkLangd;PropertyName=KantbalkLangd;PropertyName=KantbalkLangd;PropertyName=KantbalkLangd;PropertyName=KantbalkLangd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Lage" UniqueId="7b3469ef-7e44-4bee-b640-076b16c5e07a">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="1f03ec0d-224f-4e62-8bd2-20411540e663" RuleParameters="PsetName=SETRVx_BaTManKantbalk;PropertyName=Lage;PropertyName=Lage;PropertyName=Lage;PropertyName=Lage;PropertyName=Lage;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="ExposureClass" UniqueId="a82ba348-49c0-4234-a1f8-c97eb9f74bcd">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="6fa366a7-cc5e-4e78-9f3c-5a94574257ca" RuleParameters="PsetName=Pset_ConcreteElementGeneral;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="StrengthClass" UniqueId="43c09259-9a0e-4379-9e34-e731157ce5d4">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="31b63463-4664-42f4-b607-20c592dc358b" RuleParameters="PsetName=Pset_ConcreteElementGeneral;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="USDM-Bredd" UniqueId="cbd1f7fe-1f21-4e6f-865b-dab9259a1d37">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
-					<Items>
-						<DocTemplateItem UniqueId="7b18c90f-8b56-4be0-82c3-b5f42915d5db" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="USDM-Hojd" UniqueId="89a2787f-c890-4968-8cf1-70b2b682bb71">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
-					<Items>
-						<DocTemplateItem UniqueId="5e7991d4-ab67-4326-8b3b-26fd97620ee9" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="USDM-Langd" UniqueId="4f366580-2daa-40c5-a6db-6a9f65e13fc1">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
-					<Items>
-						<DocTemplateItem UniqueId="ca5c8b82-d58d-45c5-adb2-87ba1012505e" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="USDM-Volym" UniqueId="7fc6ad14-b7ce-41ca-9115-b540188412cc">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
-					<Items>
-						<DocTemplateItem UniqueId="eead27c0-f310-4cd8-addd-fe43c107cbee" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Material" UniqueId="02c1eaa7-2b94-4a04-aa4d-8e879fb4429b">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Material_Single_1VEQWKHA1Fiut6tQe5OFnK" />
-					<Items>
-						<DocTemplateItem UniqueId="6db37f57-d895-4d8c-961b-1b6f1c86e760" RuleParameters="MaterialName=Betong;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="UGA00" UniqueId="3f6ee3b3-2a12-4bea-bd5f-3fc883afc18a">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" />
-					<Items>
-						<DocTemplateItem UniqueId="60e0c343-a0ff-4cf6-857d-9b3c57c9abfe" RuleParameters="Identification=UGA00;Name=Kantbalk;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="31HC--" UniqueId="aacf5368-e0db-4def-bc9a-e527517bd399">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" />
-					<Items>
-						<DocTemplateItem UniqueId="5ee1bfed-024c-494b-ba95-0b91ca7a62c8" RuleParameters="Identification=31HC--;Name=Kantbalk;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="EBE.111" UniqueId="c143cd35-7547-4ec4-87ed-cb586570dc2c">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Classification_Association_1A8aO9PNXCTQFYl_eRbxo" />
-					<Items>
-						<DocTemplateItem UniqueId="f8ad3f3c-eff9-4b39-91f0-67a5e906cbb4" RuleParameters="Identification=EBE.111;Name=Betonggjutning Kategori A vid nybyggnad av bro;" />
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="58940e71-54b5-4ac5-9d00-76a62b3cac1b" Type="IfcBeam" />
-		</DocConceptRoot>
-		<DocConceptRoot Name="Länkplatta" UniqueId="7a85d460-f968-4bb9-8eef-fab8e5850673">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSlab" />
-			<Concepts>
-				<DocTemplateUsage Name="Identity" UniqueId="7571398d-273b-4ad3-b08b-83a1fcbb5d48">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
-					<Items>
-						<DocTemplateItem UniqueId="b1be37a0-59a1-46c2-9efc-1c0c7065918f" RuleParameters="ObjectName=Länkplatta;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Type" UniqueId="a1f25a7c-69fa-428a-ad8c-007a93869a13">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
-					<Items>
-						<DocTemplateItem UniqueId="da39cd6b-6623-4dfb-934f-d94a3d6679b6" RuleParameters="TypePredefinedType=LANDING;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="MLCT-Cementklass" UniqueId="d2c8d4b9-a6ea-4f46-b51e-118dde354625">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="efde9d17-fb24-4bf6-9f59-8ea776bd4ce0" RuleParameters="PsetName=SECC_Concrete;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="MLVX-Vattencementtal" UniqueId="94cb3b3f-a52b-489b-9372-f0634091138d">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="da360d62-b7fa-411f-8aea-336c54448024" RuleParameters="PsetName=SECC_Concrete;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="TOLL-Livslangdsklass" UniqueId="d24b16d1-ec17-48ad-a350-36e0e1d80924">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="b2f69f11-ade9-4832-9b24-c4f9e9da7203" RuleParameters="PsetName=SECC_Concrete;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Konfidentialitetsniva" UniqueId="668be8f3-f101-4e7b-b813-e350ec6eb3f4">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="29316588-4846-440a-92bc-626936b4e41a" RuleParameters="PsetName=SETRV_Metadata;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="ExposureClass" UniqueId="829861f5-f762-455b-af41-0bd3416320f9">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="1bae5610-901c-4733-976d-68d98300c571" RuleParameters="PsetName=Pset_ConcreteElementGeneral;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="StrengthClass" UniqueId="9fba9e0e-f375-45f8-911b-61a8a5325e62">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="8cf1328a-4335-40fa-b547-47b69bb61c7b" RuleParameters="PsetName=Pset_ConcreteElementGeneral;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="USDM-Bredd" UniqueId="d768641e-c837-4a3d-ab58-9964e92d2ef6">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
-					<Items>
-						<DocTemplateItem UniqueId="0422e41d-71cc-410f-bdf8-49030335df04" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="USDM-Hojd" UniqueId="bed98acf-65d2-4dba-9e3c-f3e825c6c5ed">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
-					<Items>
-						<DocTemplateItem UniqueId="24eb18a3-4875-425f-a7c2-9f16fee5730e" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="USDM-Langd" UniqueId="54fe90b1-b010-43bd-9586-23085ead9839">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
-					<Items>
-						<DocTemplateItem UniqueId="13b207e5-d24a-4872-af1c-843be6981cae" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="USDM-Volym" UniqueId="a7c6bc30-b980-4114-b53c-d2ebb63e11ad">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
-					<Items>
-						<DocTemplateItem UniqueId="0034ef25-9476-49d3-8a84-07c561190398" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;" />
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="6228caed-f6df-46bf-9882-57b83390b7f6" Type="IfcSlab" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="Överbyggnad" UniqueId="016944af-33f0-43ef-a52c-5b5c443d0dd4">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
@@ -410,139 +274,6 @@ Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documenta
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="55278292-dca9-4f0a-b399-7baa5d2a734b" Type="IfcBridgePart" />
 		</DocConceptRoot>
-		<DocConceptRoot Name="Project" UniqueId="d8dbe648-a96a-49a7-9b42-f5dc30df9b0d">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcProject" />
-			<Concepts>
-				<DocTemplateUsage Name="Site" UniqueId="32e4b3d4-c858-4116-b374-d048160322c3">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />
-					<Items>
-						<DocTemplateItem UniqueId="797be5e0-5944-48cd-801f-0235737e031f" RuleParameters="RelatedObjects=IfcSite;" />
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="8174ab92-c7d5-4ed3-b7c3-a0c78c4078a4" Type="IfcProject" />
-		</DocConceptRoot>
-		<DocConceptRoot Name="Räcke" UniqueId="c2bd3fca-56ab-4c86-af3d-e47ef1314558">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcRailing" />
-			<Concepts>
-				<DocTemplateUsage Name="Infastning" UniqueId="172add3e-629c-4afb-9b3f-1f8e0a8838ae">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="4d75e271-e786-4483-b3bc-bd8c185bfbda" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_BaTManRacke;PropertyName=Infastning;PropertyName=Infastning;PropertyName=Infastning;PropertyName=Infastning;PropertyName=Infastning;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="RackeLage" UniqueId="d8898482-eb6e-4e45-b8eb-80d83131b1ad">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="a52efd09-5dae-43d7-801e-0dcd4e1fa6ec" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_BaTManRacke;PropertyName=RackeLage;PropertyName=RackeLage;PropertyName=RackeLage;PropertyName=RackeLage;PropertyName=RackeLage;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="RackeLangd" UniqueId="2e987215-fcf9-4f57-84a0-75d37c60eb83">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="db27304c-c269-4a10-a556-7e4c152b6a78" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_BaTManRacke;PropertyName=RackeLangd;PropertyName=RackeLangd;PropertyName=RackeLangd;PropertyName=RackeLangd;PropertyName=RackeLangd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="RackeMaterial" UniqueId="6ea3bb73-972b-4c82-aff3-29fbda282d42">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="f11e98cf-c7b1-4d87-9943-c422fdfa028f" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_BaTManRacke;PropertyName=RackeMaterial;PropertyName=RackeMaterial;PropertyName=RackeMaterial;PropertyName=RackeMaterial;PropertyName=RackeMaterial;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="USDM-Bredd" UniqueId="eeb52ee4-28fb-4f44-879c-16351981c27f">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="1392107b-71b0-48af-ad8b-5845dd51b459" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SECC_DimensionNominella;PropertyName=USDM-Bredd;PropertyName=RackeMaterial;PropertyName=RackeMaterial;PropertyName=RackeMaterial;PropertyName=RackeMaterial;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="USDM-Langd" UniqueId="bb9ea557-55ec-4d37-941e-c1d2de90a577">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="73ad801d-fe89-4e7b-b39c-c69b62462bc1" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SECC_DimensionNominella;PropertyName=USDM-Langd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="CE-Markning" UniqueId="f311c014-7b1d-416f-bbbc-96573769bc35">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="476f4942-dcce-456f-9cc8-4106a940e8cf" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=CE-Markning;PropertyName=CE-Markning;PropertyName=CE-Markning;PropertyName=CE-Markning;PropertyName=CE-Markning;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Foreteelsetillkomst" UniqueId="6ccb67a5-adc8-46d2-91f9-86b41085d4a4">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="9ba3f842-2a91-4e70-ba10-e10df9e4a820" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=Foreteelsetillkomst;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Foreteelsetyp" UniqueId="159d36de-3a3d-48a6-ae22-dc1cf1dd43b7">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="f5db6cf9-ae54-4bf1-99d9-6e195b7b489c" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=Foreteelsetyp;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="GemensamtMittracke" UniqueId="b1554b99-c01d-489f-bc7c-a2d9156592de">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="65222cb8-c384-42b9-8f46-2a4874bee9e0" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=GemensamtMittracke;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Hogkapacitetsracke" UniqueId="387e3139-3843-45c2-b040-e4baf5e067dc">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="fb0ae825-96f2-46a9-a2e2-f44bf10aa685" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=Hogkapacitetsracke;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Sakerhetsstandard" UniqueId="2e4ca71f-88b2-4c5f-b98e-cffc1a12abdb">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="3ff49da0-df9b-4273-9ef4-0a92085aab48" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=Sakerhetsstandard;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="TekniskBeskrivning" UniqueId="b6543883-3bb2-4593-b04c-7998752f9fa3">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="39ed8c16-24b3-418f-873e-2287442d865f" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=TekniskBeskrivning;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Vagrackesreflex" UniqueId="04f0b2ef-15f6-4845-aff4-53990084330e">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="f2f58e6c-d780-4dad-a5db-885b4bf679e9" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=Vagrackesreflex;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;">
-							<Concepts>
-								<DocTemplateUsage Name="Properties" UniqueId="6ea44366-bc1c-418d-9c99-8707eae64dc2">
-									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
-								</DocTemplateUsage>
-							</Concepts>
-						</DocTemplateItem>
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Vagrackestyp" UniqueId="1878434f-2375-40e6-9fea-8fc6cb138ad6">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
-					<Items>
-						<DocTemplateItem UniqueId="2cea33af-dad3-43ce-a42e-e1e7e25663e1" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=Vagrackestyp;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;" />
-					</Items>
-				</DocTemplateUsage>
-				<DocTemplateUsage Name="Length" UniqueId="e1dcb45d-65ce-46fb-9b5e-f5dd9bc04c60">
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
-					<Items>
-						<DocTemplateItem UniqueId="12953f2f-001e-45b8-80a9-1ebd9a70a335" RuleParameters="QsetName=Qto_RailingBaseQuantities;QuantityName=Length;" />
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="7850f9c2-b92c-432b-ad23-2b3c1636021d" Type="IfcRailing" />
-		</DocConceptRoot>
-		<DocConceptRoot Name="Site" UniqueId="49e8ddfb-0fb7-43d3-a991-f855884fad3c">
-			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSite" />
-			<Concepts>
-				<DocTemplateUsage Name="Name and Description" UniqueId="4b7864d7-a848-44a3-9e01-95041e8e6bd8">
-					<Documentation>Entreprenad eller annan mindre avgränsad del av ett projekt</Documentation>
-					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
-					<Items>
-						<DocTemplateItem UniqueId="72cfc32a-11e8-4596-bdc6-a5b1c6fc0366" />
-					</Items>
-				</DocTemplateUsage>
-			</Concepts>
-			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="33857b38-e372-4c95-ad14-34138c5f386d" Type="IfcSite" />
-		</DocConceptRoot>
 		<DocConceptRoot Name="Underbyggnad" UniqueId="280bc453-35e6-49ec-a7df-5071e3339f5e">
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
 			<Concepts>
@@ -571,6 +302,275 @@ Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documenta
 				</DocTemplateUsage>
 			</Concepts>
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="c8c742aa-1a21-4d11-bc04-16e733ae7dd4" Type="IfcBridgePart" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Anläggningskompletteringar" UniqueId="2b950ecb-f5c8-4f97-9172-1ac655c44b3e">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="PredefinedType" UniqueId="e9d9f83e-0e99-43fe-8c1c-626eb1848813">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="f7af474e-74e2-4576-8047-01e118dbd8f6" RuleParameters="PredefinedType=SURFACESTRUCTURE;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Bridge" UniqueId="32c65686-1a3b-4c04-94f7-b77c465d1d13">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="0953c2c6-b712-46a1-a61f-52f9019ded20" RuleParameters="RelatingObject=IfcBridge;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Contains" UniqueId="6746a3ae-4f95-4ecd-9e3c-edf6995aaff1">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="318508a3-ef64-46ad-a6cf-5b9c4a7429f9" RuleParameters="Type=IfcDuctSegment;">
+							<Documentation>piping</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="99e02c3f-d145-48b9-9b51-369957cec2c8" RuleParameters="Type=IfcRailing;">
+							<Documentation>guardrail</Documentation>
+						</DocTemplateItem>
+						<DocTemplateItem UniqueId="54b1aef1-73aa-437a-a48e-76510c4e3193" RuleParameters="Type=IfcSensor;">
+							<Documentation>various sensors</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="95439e32-6a0c-49ec-b871-3c8459e933f2" Type="IfcBridgePart" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Grundläggning" UniqueId="dd2bab12-e970-4bde-902a-e7a76376c092">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
+			<Concepts>
+				<DocTemplateUsage Name="PredefinedType" UniqueId="b95f8d6f-935f-41b8-9bc3-eb28aba4097c">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="335a3c87-268e-4ae0-98b5-a82b61c8dde9" RuleParameters="PredefinedType=FOUNDATION;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Bridge" UniqueId="78290f7a-a038-43cc-9765-c82df403ac74">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Composition_2C3zBtSRjEReR30ApKl5A" />
+					<Items>
+						<DocTemplateItem UniqueId="0e5b080f-2cc0-4d5d-9986-1f71dda08d53" RuleParameters="RelatingObject=IfcBridge;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Contains" UniqueId="9cff4444-17e8-421a-8363-ba05333a929a">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Container_1XtGZjG59LPCtYlqeIWvl" />
+					<Items>
+						<DocTemplateItem UniqueId="817122fe-d03e-405d-9fb8-7600cd7be975" RuleParameters="Type=IfcFooting;">
+							<Documentation>Bottenplatta</Documentation>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="dc4bf7ba-f68d-4d85-88df-14364ebcb1c0" Type="IfcBridgePart" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Project" UniqueId="d8dbe648-a96a-49a7-9b42-f5dc30df9b0d">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcProject" />
+			<Concepts>
+				<DocTemplateUsage Name="Site" UniqueId="32e4b3d4-c858-4116-b374-d048160322c3">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Spatial_Decomposition_1cVuH3xCvAZQOan_h15FW" />
+					<Items>
+						<DocTemplateItem UniqueId="797be5e0-5944-48cd-801f-0235737e031f" RuleParameters="RelatedObjects=IfcSite;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="8174ab92-c7d5-4ed3-b7c3-a0c78c4078a4" Type="IfcProject" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Räcke" UniqueId="c2bd3fca-56ab-4c86-af3d-e47ef1314558">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcRailing" />
+			<Concepts>
+				<DocTemplateUsage Name="Infastning" UniqueId="172add3e-629c-4afb-9b3f-1f8e0a8838ae" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="4d75e271-e786-4483-b3bc-bd8c185bfbda" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_BaTManRacke;PropertyName=Infastning;PropertyName=Infastning;PropertyName=Infastning;PropertyName=Infastning;PropertyName=Infastning;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="RackeLage" UniqueId="d8898482-eb6e-4e45-b8eb-80d83131b1ad" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="a52efd09-5dae-43d7-801e-0dcd4e1fa6ec" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_BaTManRacke;PropertyName=RackeLage;PropertyName=RackeLage;PropertyName=RackeLage;PropertyName=RackeLage;PropertyName=RackeLage;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="RackeLangd" UniqueId="2e987215-fcf9-4f57-84a0-75d37c60eb83" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="db27304c-c269-4a10-a556-7e4c152b6a78" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_BaTManRacke;PropertyName=RackeLangd;PropertyName=RackeLangd;PropertyName=RackeLangd;PropertyName=RackeLangd;PropertyName=RackeLangd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="RackeMaterial" UniqueId="6ea3bb73-972b-4c82-aff3-29fbda282d42" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="f11e98cf-c7b1-4d87-9943-c422fdfa028f" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_BaTManRacke;PropertyName=RackeMaterial;PropertyName=RackeMaterial;PropertyName=RackeMaterial;PropertyName=RackeMaterial;PropertyName=RackeMaterial;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Bredd" UniqueId="eeb52ee4-28fb-4f44-879c-16351981c27f" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="1392107b-71b0-48af-ad8b-5845dd51b459" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SECC_DimensionNominella;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;PropertyName=USDM-Bredd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Langd" UniqueId="bb9ea557-55ec-4d37-941e-c1d2de90a577" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="73ad801d-fe89-4e7b-b39c-c69b62462bc1" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SECC_DimensionNominella;PropertyName=USDM-Langd;PropertyName=USDM-Langd;PropertyName=USDM-Langd;PropertyName=USDM-Langd;PropertyName=USDM-Langd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="CE-Markning" UniqueId="f311c014-7b1d-416f-bbbc-96573769bc35" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="476f4942-dcce-456f-9cc8-4106a940e8cf" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=CE-Markning;PropertyName=CE-Markning;PropertyName=CE-Markning;PropertyName=CE-Markning;PropertyName=CE-Markning;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Foreteelsetillkomst" UniqueId="6ccb67a5-adc8-46d2-91f9-86b41085d4a4" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="9ba3f842-2a91-4e70-ba10-e10df9e4a820" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=Foreteelsetillkomst;PropertyName=Foreteelsetillkomst;PropertyName=Foreteelsetillkomst;PropertyName=Foreteelsetillkomst;PropertyName=Foreteelsetillkomst;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Foreteelsetyp" UniqueId="159d36de-3a3d-48a6-ae22-dc1cf1dd43b7" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="f5db6cf9-ae54-4bf1-99d9-6e195b7b489c" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=Foreteelsetyp;PropertyName=Foreteelsetyp;PropertyName=Foreteelsetyp;PropertyName=Foreteelsetyp;PropertyName=Foreteelsetyp;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="GemensamtMittracke" UniqueId="b1554b99-c01d-489f-bc7c-a2d9156592de" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="65222cb8-c384-42b9-8f46-2a4874bee9e0" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=GemensamtMittracke;PropertyName=GemensamtMittracke;PropertyName=GemensamtMittracke;PropertyName=GemensamtMittracke;PropertyName=GemensamtMittracke;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Hogkapacitetsracke" UniqueId="387e3139-3843-45c2-b040-e4baf5e067dc" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="fb0ae825-96f2-46a9-a2e2-f44bf10aa685" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=Hogkapacitetsracke;PropertyName=Hogkapacitetsracke;PropertyName=Hogkapacitetsracke;PropertyName=Hogkapacitetsracke;PropertyName=Hogkapacitetsracke;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Sakerhetsstandard" UniqueId="2e4ca71f-88b2-4c5f-b98e-cffc1a12abdb" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="3ff49da0-df9b-4273-9ef4-0a92085aab48" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=Sakerhetsstandard;PropertyName=Sakerhetsstandard;PropertyName=Sakerhetsstandard;PropertyName=Sakerhetsstandard;PropertyName=Sakerhetsstandard;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="TekniskBeskrivning" UniqueId="b6543883-3bb2-4593-b04c-7998752f9fa3" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="39ed8c16-24b3-418f-873e-2287442d865f" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=TekniskBeskrivning;PropertyName=TekniskBeskrivning;PropertyName=TekniskBeskrivning;PropertyName=TekniskBeskrivning;PropertyName=TekniskBeskrivning;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Vagrackesreflex" UniqueId="04f0b2ef-15f6-4845-aff4-53990084330e" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="f2f58e6c-d780-4dad-a5db-885b4bf679e9" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=Vagrackesreflex;PropertyName=Vagrackesreflex;PropertyName=Vagrackesreflex;PropertyName=Vagrackesreflex;PropertyName=Vagrackesreflex;">
+							<Concepts>
+								<DocTemplateUsage Name="Properties" UniqueId="6ea44366-bc1c-418d-9c99-8707eae64dc2">
+									<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Single_Value_1cLVRGAQX7k8yzoVpfoQOW" />
+								</DocTemplateUsage>
+							</Concepts>
+						</DocTemplateItem>
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Vagrackestyp" UniqueId="1878434f-2375-40e6-9fea-8fc6cb138ad6" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="2cea33af-dad3-43ce-a42e-e1e7e25663e1" RuleParameters="PredefinedType=GUARDRAIL;PsetName=SETRVx_NVDBvagracke;PropertyName=Vagrackestyp;PropertyName=Vagrackestyp;PropertyName=Vagrackestyp;PropertyName=Vagrackestyp;PropertyName=Vagrackestyp;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Length" UniqueId="e1dcb45d-65ce-46fb-9b5e-f5dd9bc04c60">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="12953f2f-001e-45b8-80a9-1ebd9a70a335" RuleParameters="QsetName=Qto_RailingBaseQuantities;QuantityName=Length;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="7850f9c2-b92c-432b-ad23-2b3c1636021d" Type="IfcRailing" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Site" UniqueId="49e8ddfb-0fb7-43d3-a991-f855884fad3c">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSite" />
+			<Concepts>
+				<DocTemplateUsage Name="Name and Description" UniqueId="4b7864d7-a848-44a3-9e01-95041e8e6bd8">
+					<Documentation>Entreprenad eller annan mindre avgränsad del av ett projekt</Documentation>
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+					<Items>
+						<DocTemplateItem UniqueId="72cfc32a-11e8-4596-bdc6-a5b1c6fc0366" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="33857b38-e372-4c95-ad14-34138c5f386d" Type="IfcSite" />
+		</DocConceptRoot>
+		<DocConceptRoot Name="Länkplatta" UniqueId="7a85d460-f968-4bb9-8eef-fab8e5850673">
+			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcSlab" />
+			<Concepts>
+				<DocTemplateUsage Name="Identity" UniqueId="7571398d-273b-4ad3-b08b-83a1fcbb5d48">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_User_Identity_31di66dFr7AJKdxDG2D1A" />
+					<Items>
+						<DocTemplateItem UniqueId="b1be37a0-59a1-46c2-9efc-1c0c7065918f" RuleParameters="ObjectName=Länkplatta;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Type" UniqueId="a1f25a7c-69fa-428a-ad8c-007a93869a13">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Object_Predefined_Type_0b989XcDzD2fDaLbDNNAGX" />
+					<Items>
+						<DocTemplateItem UniqueId="da39cd6b-6623-4dfb-934f-d94a3d6679b6" RuleParameters="TypePredefinedType=LANDING;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="MLCT-Cementklass" UniqueId="d2c8d4b9-a6ea-4f46-b51e-118dde354625" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="efde9d17-fb24-4bf6-9f59-8ea776bd4ce0" RuleParameters="PsetName=SECC_Concrete;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;PropertyName=MLCT-Cementklass;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="MLVX-Vattencementtal" UniqueId="94cb3b3f-a52b-489b-9372-f0634091138d" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="da360d62-b7fa-411f-8aea-336c54448024" RuleParameters="PsetName=SECC_Concrete;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;PropertyName=MLVX-Vattencementtal;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="TOLL-Livslangdsklass" UniqueId="d24b16d1-ec17-48ad-a350-36e0e1d80924" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="b2f69f11-ade9-4832-9b24-c4f9e9da7203" RuleParameters="PsetName=SECC_Concrete;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;PropertyName=TOLL-Livslangdsklass;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="Konfidentialitetsniva" UniqueId="668be8f3-f101-4e7b-b813-e350ec6eb3f4" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="29316588-4846-440a-92bc-626936b4e41a" RuleParameters="PsetName=SETRV_Metadata;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;PropertyName=Konfidentialitetsniva;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="ExposureClass" UniqueId="829861f5-f762-455b-af41-0bd3416320f9" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="1bae5610-901c-4733-976d-68d98300c571" RuleParameters="PsetName=Pset_ConcreteElementGeneral;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;PropertyName=ExposureClass;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="StrengthClass" UniqueId="9fba9e0e-f375-45f8-911b-61a8a5325e62" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Property_Sets_for_Objects_3tGbMc30vFCOIj99WTjYHX" />
+					<Items>
+						<DocTemplateItem UniqueId="8cf1328a-4335-40fa-b547-47b69bb61c7b" RuleParameters="PsetName=Pset_ConcreteElementGeneral;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;PropertyName=StrengthClass;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Bredd" UniqueId="d768641e-c837-4a3d-ab58-9964e92d2ef6" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="0422e41d-71cc-410f-bdf8-49030335df04" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;QuantityName=USDM-Bredd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Hojd" UniqueId="bed98acf-65d2-4dba-9e3c-f3e825c6c5ed" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="24eb18a3-4875-425f-a7c2-9f16fee5730e" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;QuantityName=USDM-Hojd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Langd" UniqueId="54fe90b1-b010-43bd-9586-23085ead9839" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="13b207e5-d24a-4872-af1c-843be6981cae" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;QuantityName=USDM-Langd;" />
+					</Items>
+				</DocTemplateUsage>
+				<DocTemplateUsage Name="USDM-Volym" UniqueId="a7c6bc30-b980-4114-b53c-d2ebb63e11ad" Override="true">
+					<Definition xsi:type="DocTemplateDefinition" xsi:nil="true" href="Quantity_Sets_1cKZcEPNb4O8oq9YbQpwp7" />
+					<Items>
+						<DocTemplateItem UniqueId="0034ef25-9476-49d3-8a84-07c561190398" RuleParameters="QsetName=SECC_DimensionNominella;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;QuantityName=USDM-Volym;" />
+					</Items>
+				</DocTemplateUsage>
+			</Concepts>
+			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="6228caed-f6df-46bf-9882-57b83390b7f6" Type="IfcSlab" />
 		</DocConceptRoot>
 	</ConceptRoots>
 </DocModelView>
