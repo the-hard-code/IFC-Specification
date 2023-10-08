@@ -209,6 +209,7 @@
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="dc673f9c-a82c-468d-9774-15e92d90fc91" Type="IfcBeam" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="Bridge" UniqueId="e6bf637d-1f47-44dd-a407-466a8d525d61">
+			<Documentation>![&quot;Bro&quot;](../../figures/bridge.png &quot;Figure 1 &amp;mdash; Bro&quot;)</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridge" />
 			<Concepts>
 				<DocTemplateUsage Name="Name and Description" UniqueId="d2605fe8-7ea2-4ab2-8878-b3c8f6879b61">
@@ -339,6 +340,7 @@ Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documenta
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="990e973d-dedb-447b-8f15-c8725700f52b" Type="IfcBridge" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="Överbyggnad" UniqueId="016944af-33f0-43ef-a52c-5b5c443d0dd4">
+			<Documentation>Till överbyggnaden räknas de delar av bron som är belägna ovanför stöd. För plattramar utgörs gränsen mellan över-och underbyggnad av gjutfogen mellan ramben och brobaneplatta, eller då gjutfog saknas, av ett horisontellt snitt vid votens anslutning i frontmuren.</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
 			<Concepts>
 				<DocTemplateUsage Name="PredefinedType" UniqueId="877024e8-c224-4405-9e96-45e35abfef34">
@@ -368,6 +370,17 @@ Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documenta
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="55278292-dca9-4f0a-b399-7baa5d2a734b" Type="IfcBridgePart" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="Underbyggnad" UniqueId="280bc453-35e6-49ec-a7df-5071e3339f5e">
+			<Documentation>Till underbyggnaden räknas de konstruktionsdelar som är belägna över grundläggningen, samt under överbyggnaden som stöd, pelare, frontmur etc, samt för plattramar delarna under gjutfogen mellan ramben och brobaneplatta.
+
+Ändskärm vid till exempel broar med upphöjt landfäste räknas i inspektionssammanhang till underbyggnad.
+
+Kantbalkar på landfästen och dylikt räknas till överbyggnaden.
+
+Slänt och kon
+
+räknas till underbyggnaden och har till uppgift att ta upp bland annat jordtryck, vara stöd för vägbank, frontmur, pelare, ving- och stödmur.
+
+Dessutom förhindrar slänt och kon underspolning och utgör ett skydd mot isgång och strömmande vatten för angränsande konstruktionsdelar.</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
 			<Concepts>
 				<DocTemplateUsage Name="PredefinedType" UniqueId="328178f2-c3e0-48b7-807a-bb188d955278">
@@ -429,6 +442,12 @@ Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documenta
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="95439e32-6a0c-49ec-b871-3c8459e933f2" Type="IfcBridgePart" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="Grundläggning" UniqueId="dd2bab12-e970-4bde-902a-e7a76376c092">
+			<Documentation>Med grundläggning avses i inspektionssammanhang gränssnittet mellan bottenplatta och stöd. Till skillnad från
+TRVINFRA-00227 Bro och broliknande konstruktion, Byggande, hänförs alltså bottenplattan här till grundläggning. 
+
+Grundläggningen ska kunna ta upp de laster som överförs från underbyggnaden.
+
+Till grundläggningen räknas bottenplatta, erosionsskydd, fyllning, kassun, naturlig botten, plint, påle ,rustbädd, spont och stenkista.</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcBridgePart" />
 			<Concepts>
 				<DocTemplateUsage Name="PredefinedType" UniqueId="b95f8d6f-935f-41b8-9bc3-eb28aba4097c">
@@ -485,6 +504,7 @@ Alternativt en konstruktion enligt BaTMan Enligt BaTMan: Funktionstyp</Documenta
 			<ApplicableTemplate xsi:type="DocTemplateDefinition" UniqueId="8174ab92-c7d5-4ed3-b7c3-a0c78c4078a4" Type="IfcProject" />
 		</DocConceptRoot>
 		<DocConceptRoot Name="Räcke" UniqueId="c2bd3fca-56ab-4c86-af3d-e47ef1314558">
+			<Documentation>Räcke utgör ett skydd mot avkörning etc och fördelar eventuell påkörningslast genom samverkan över en längre sträcka.</Documentation>
 			<ApplicableEntity xsi:type="DocEntity" xsi:nil="true" href="IfcRailing" />
 			<Concepts>
 				<DocTemplateUsage Name="Infastning" UniqueId="172add3e-629c-4afb-9b3f-1f8e0a8838ae" Override="true">
