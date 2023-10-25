@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocPropertySet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="SECC_Concrete" UniqueId="e185ecf8-b849-44b4-af33-edd0963bb044" ApplicableType="IfcBuiltElement">
+	<Properties>
+		<DocProperty xsi:nil="true" href="MLCTCementklass_1rMkr2_LC98NDQorrHKIq" />
+		<DocProperty xsi:nil="true" href="MLVXVattencementtal_3gP2iIr6v49hEBwqddMSc" />
+		<DocProperty xsi:nil="true" href="TOLLLivslangdsklass_1DFfmZZyH9zBVPLW0tLWdg" />
+	</Properties>
+</DocPropertySet>
+

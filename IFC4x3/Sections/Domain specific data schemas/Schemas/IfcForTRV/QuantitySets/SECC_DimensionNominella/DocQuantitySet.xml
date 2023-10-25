@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocQuantitySet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="SECC_DimensionNominella" UniqueId="f8a7e0ce-51f8-4585-8dd4-5ac041755db6" ApplicableType="IfcBuiltElement">
+	<Quantities>
+		<DocQuantity xsi:nil="true" href="USDMBredd_2rSYgI4en4mw63yZqiAgIo" />
+		<DocQuantity xsi:nil="true" href="USDMHojd_3v6RVFJAz2SO_GPEb69sjl" />
+		<DocQuantity xsi:nil="true" href="USDMLangd_1zzKDgWXT51wnLTZAOfcm_" />
+		<DocQuantity xsi:nil="true" href="USDMVolym_1QMOFMEvr06g8ZYlhvzLaf" />
+	</Quantities>
+</DocQuantitySet>
+
